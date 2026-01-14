@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Catatan Pesanan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container {
+            padding: 2rem 5%;
+            margin-top: 80px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+        }
+
+        th {
+            background: rgba(99, 102, 241, 0.2);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .empty-msg {
+            text-align: center;
+            padding: 2rem;
+            color: #94a3b8;
+        }
+
+        .btn-clear {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">AMIRA NET</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Kembali ke Website</a></li>
+        </ul>
+    </nav>
+
+    <div class="admin-container glass">
+        <h2>Catatan Pesanan Masuk</h2>
+        <p>Data ini tersimpan di browser ini (Local Storage).</p>
+
+        <div id="orderTableContainer">
+            <!-- Table will be injected here -->
+        </div>
+
+        <button onclick="clearOrders()" class="btn-clear">Hapus Semua Data</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', loadOrders);
+
+        function loadOrders() {
+            const container = document.getElementById('orderTableContainer');
+            const orders = JSON.parse(localStorage.getItem('amira_orders')) || [];
+
+            if (orders.length === 0) {
+                container.innerHTML = '<div class="empty-msg">Belum ada pesanan yang tercatat.</div>';
+                return;
+            }
+
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Waktu</th>
+                            <th>Nama</th>
+                            <th>Produk</th>
+                            <th>No. HP</th>
+                            <th>Catatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            // Sort by new first
+            orders.reverse().forEach(order => {
+                html += `
+                    <tr>
+                        <td>${order.date}</td>
+                        <td>${order.name}</td>
+                        <td>${order.product}</td>
+                        <td>${order.phone}</td>
+                        <td>${order.notes || '-'}</td>
+                    </tr>
+                `;
+            });
+
+            html += `</tbody></table>`;
+            container.innerHTML = html;
+        }
+
+        function clearOrders() {
+            if (confirm('Apakah Anda yakin ingin menghapus semua riwayat pesanan? Data tidak bisa dikembalikan.')) {
+                localStorage.removeItem('amira_orders');
+                loadOrders();
+            }
+        }
+    </script>
+</body>
+
+</html>

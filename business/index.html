@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMIRA NET - Solusi Internet & Pulsa Cepat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">AMIRA NET</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#products">Layanan</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Koneksi Cepat,<br>Harga Bersahabat</h1>
+            <p>Dapatkan pengalaman internet stabil dan pembelian pulsa termurah hanya di AMIRA NET.</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; margin-bottom: 2rem; opacity: 0.9;">
+                <i class="far fa-clock"></i> Jam Layanan: Pukul 08.00 – 21.00 WITA
+            </p>
+            <a href="#products" class="btn-primary">Beli Sekarang</a>
+        </div>
+        <div class="hero-image">
+            <!-- Placeholder for hero background or illustration usage -->
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="product-container">
+            <!-- Siber Net -->
+            <!-- Siber Net -->
+            <div class="product-card glass">
+                <div style="font-size: 5rem; color: #3b82f6; margin-bottom: 2rem;">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>Voucher Siber Net</h3>
+                <p>Internet Hemat & Cepat.</p>
+                <ul class="price-list">
+                    <li>3 Jam - Rp 1.000</li>
+                    <li>6 Jam - Rp 2.000</li>
+                    <li>3 Hari - Rp 5.000</li>
+                    <li>7 Hari - Rp 10.000</li>
+                    <li>30 Hari - Rp 35.000</li>
+                </ul>
+                <button class="btn-secondary" onclick="scrollToOrder('Siber Net')">Pesan</button>
+            </div>
+
+            <!-- Milenial Net -->
+            <!-- Milenial Net -->
+            <div class="product-card glass">
+                <div style="font-size: 5rem; color: #10b981; margin-bottom: 2rem;">
+                    <i class="fas fa-signal"></i>
+                </div>
+                <h3>Voucher Milenial Net</h3>
+                <p>Solusi Internet Generasi Kini.</p>
+                <ul class="price-list">
+                    <li>24 Jam - Rp 2.000</li>
+                    <li>3 Hari - Rp 5.000</li>
+                    <li>7 Hari - Rp 10.000</li>
+                    <li>30 Hari - Rp 35.000</li>
+                </ul>
+                <button class="btn-secondary" onclick="scrollToOrder('Milenial Net')">Pesan</button>
+            </div>
+
+            <!-- Pulsa -->
+            <!-- Pulsa -->
+            <div class="product-card glass">
+                <div style="font-size: 5rem; color: #f59e0b; margin-bottom: 2rem;">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Pulsa All Operator</h3>
+                <p>Isi ulang pulsa semua operator seluler.</p>
+                <ul class="price-list">
+                    <li>Nominal Murah</li>
+                    <li>Proses Cepat</li>
+                    <li><i>*Tidak sedia paket data</i></li>
+                </ul>
+                <button class="btn-secondary" onclick="scrollToOrder('Pulsa')">Pesan</button>
+            </div>
+
+            <!-- Jasa Pasang & Service -->
+            <div class="product-card glass">
+                <div style="font-size: 5rem; color: #a855f7; margin-bottom: 2rem;">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Pasang & Service</h3>
+                <p>Solusi teknis untuk kebutuhan WiFi Anda.</p>
+                <ul class="price-list">
+                    <li>Pasang Baru</li>
+                    <li>Perbaikan / Service</li>
+                    <li>Maintenance Jaringan</li>
+                </ul>
+                <button class="btn-secondary" onclick="scrollToOrder('Jasa WiFi')">Konsultasi</button>
+            </div>
+
+            <!-- Print & Fotokopi -->
+            <div class="product-card glass">
+                <div style="font-size: 5rem; color: #3b82f6; margin-bottom: 2rem;">
+                    <i class="fas fa-print"></i>
+                </div>
+                <h3>Print & Fotokopi</h3>
+                <p>Layanan cetak dan fotokopi dokumen untuk kebutuhan sekolah, kuliah, dan keperluan sehari-hari.</p>
+                <ul class="price-list">
+                    <li>Print Hitam Putih</li>
+                    <li>Print Berwarna</li>
+                    <li>Fotokopi Dokumen</li>
+                    <li>Cetak File dari HP</li>
+                </ul>
+                <button class="btn-secondary" onclick="scrollToOrder('Print')">Pesan</button>
+            </div>
+
+            <!-- E-Wallet -->
+            <div class="product-card glass">
+                <div style="font-size: 5rem; color: #0ea5e9; margin-bottom: 2rem;">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Top Up E-Wallet</h3>
+                <p>Isi saldo dompet digital cepat & aman.</p>
+                <ul class="price-list">
+                    <li>DANA</li>
+                    <li>GOPAY</li>
+                    <li>OVO</li>
+                    <li>ShopeePay</li>
+                </ul>
+                <button class="btn-secondary" onclick="scrollToOrder('E-Wallet')">Pesan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order -->
+    <section class="steps">
+        <h2 class="section-title">Cara Pemesanan</h2>
+        <div class="steps-container">
+            <div class="step">
+                <i class="fas fa-hand-pointer"></i>
+                <h3>1. Pilih Layanan</h3>
+                <p>Pilih paket Voucher, Pulsa, atau Jasa Service.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-edit"></i>
+                <h3>2. Isi Form</h3>
+                <p>Lengkapi data diri dan detail kebutuhan Anda.</p>
+            </div>
+            <div class="step">
+                <i class="fab fa-whatsapp"></i>
+                <h3>3. Kirim WhatsApp</h3>
+                <p>Terhubung langsung ke teknisi/admin kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="order-section">
+        <div class="order-container glass">
+            <h2>Form Pemesanan</h2>
+            <form id="orderForm">
+                <div class="input-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" required placeholder="Masukkan nama Anda">
+                </div>
+                <div class="input-group">
+                    <label for="product">Pilih Produk / Layanan</label>
+                    <select id="product">
+                        <optgroup label="Siber Net">
+                            <option value="Siber Net - 3 Jam (1k)">Siber Net - 3 Jam (Rp 1.000)</option>
+                            <option value="Siber Net - 6 Jam (2k)">Siber Net - 6 Jam (Rp 2.000)</option>
+                            <option value="Siber Net - 3 Hari (5k)">Siber Net - 3 Hari (Rp 5.000)</option>
+                            <option value="Siber Net - 7 Hari (10k)">Siber Net - 7 Hari (Rp 10.000)</option>
+                            <option value="Siber Net - 30 Hari (35k)">Siber Net - 30 Hari (Rp 35.000)</option>
+                        </optgroup>
+                        <optgroup label="Milenial Net">
+                            <option value="Milenial Net - 24 Jam (2k)">Milenial Net - 24 Jam (Rp 2.000)</option>
+                            <option value="Milenial Net - 3 Hari (5k)">Milenial Net - 3 Hari (Rp 5.000)</option>
+                            <option value="Milenial Net - 7 Hari (10k)">Milenial Net - 7 Hari (Rp 10.000)</option>
+                            <option value="Milenial Net - 30 Hari (35k)">Milenial Net - 30 Hari (Rp 35.000)</option>
+                        </optgroup>
+                        <optgroup label="Print & Fotokopi">
+                            <option value="Print Hitam Putih">Print Hitam Putih</option>
+                            <option value="Print Berwarna">Print Berwarna</option>
+                            <option value="Fotokopi">Fotokopi</option>
+                            <option value="Cetak File dari HP">Cetak File dari HP</option>
+                        </optgroup>
+                        <optgroup label="E-Wallet">
+                            <option value="Top Up DANA">Top Up DANA</option>
+                            <option value="Top Up GOPAY">Top Up GOPAY</option>
+                            <option value="Top Up OVO">Top Up OVO</option>
+                            <option value="Top Up ShopeePay">Top Up ShopeePay</option>
+                        </optgroup>
+                        <optgroup label="Lainnya">
+                            <option value="Pulsa All Operator">Pulsa All Operator</option>
+                            <option value="Jasa Pasang WiFi Baru">Jasa Pasang WiFi Baru</option>
+                            <option value="Jasa Perbaikan/Service WiFi">Jasa Perbaikan/Service WiFi</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Nomor HP / WhatsApp</label>
+                    <input type="tel" id="phone" required placeholder="Contoh: 08123456789">
+                </div>
+                <div class="input-group">
+                    <label for="notes">Catatan Tambahan (Opsional)</label>
+                    <textarea id="notes" placeholder="Misal: Nominal pulsa, alamat pemasangan, dll"></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                    <i class="fab fa-whatsapp"></i> Kirim ke WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Owner Profile -->
+    <section id="about" class="about">
+        <div class="about-container glass">
+            <div class="profile-img-wrapper">
+                <img src="owner_real.jpg" alt="Pemilik Amira Net" class="profile-img">
+            </div>
+            <div class="about-text">
+                <h2>Tentang Pemilik</h2>
+                <h3>Amira Najwa Fitri</h3>
+                <p>Selamat datang di <strong>AMIRA NET</strong>. Saya berdedikasi untuk menyediakan layanan internet
+                    berkualitas dan kebutuhan digital harian dengan harga terjangkau bagi masyarakat sekitar Suralaga.
+                </p>
+                <div class="stats">
+                    <div>
+                        <h4>08-21</h4>
+                        <p>Jam Layanan (WITA)</p>
+                    </div>
+                    <div>
+                        <h4>100%</h4>
+                        <p>Terpercaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AMIRA NET</h3>
+                <p>Solusi Internet Hemat & Cepat.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>WhatsApp: <a href="https://wa.me/6287761571803"
+                        style="color:#cbd5e1;text-decoration:none;">0877-6157-1803</a></p>
+                <p>HP: 0819-2981-0345</p>
+                <p>Alamat: Suralaga</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <p><a href="https://instagram.com/amrnjwfitri" target="_blank"
+                            style="color:#cbd5e1;text-decoration:none;"><i class="fab fa-instagram"></i>
+                            @amrnjwfitri</a></p>
+                    <p><a href="https://facebook.com/najwa.amira" target="_blank"
+                            style="color:#cbd5e1;text-decoration:none;"><i class="fab fa-facebook"></i> najwa amira</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AMIRA NET. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

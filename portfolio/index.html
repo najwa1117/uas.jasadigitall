@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Najwa - Guru Ngaji Privat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Amira Najwa</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#services">Layanan Belajar</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <a href="../index.html" class="btn-back">Halaman Utama</a>
+    </nav>
+
+    <header id="home" class="header">
+        <div class="container header-content">
+            <div class="text-box">
+                <span class="badge">Guru Ngaji Privat</span>
+                <h1>Membimbing Anak Belajar Mengaji dengan Baik dan Benar</h1>
+                <p>Saya Amira Najwa Fitri, guru ngaji privat yang menyediakan layanan pembelajaran Al-Qur’an untuk
+                    anak-anak secara personal, dengan materi terstruktur dan pendekatan yang disesuaikan dengan
+                    kemampuan masing-masing anak.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                    <a href="#services" class="btn btn-outline">Lihat Program Ngaji</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="owner_real.jpg" alt="Amira Najwa Fitri" class="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <h3>Latar Belakang</h3>
+                    <p>Mahasiswi Sistem Informasi yang memiliki passion kuat dalam dunia pendidikan dan teknologi.
+                        Berpengalaman dalam membimbing siswa SD-SMP.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-heart icon"></i>
+                    <h3>Filosofi Mengajar</h3>
+                    <p>Setiap anak itu unik. Saya menggunakan pendekatan personal yang disesuaikan dengan gaya belajar
+                        masing-masing siswa agar materi mudah dipahami.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-star icon"></i>
+                    <h3>Pengalaman Mengajar</h3>
+                    <div>
+                        <p style="margin-bottom: 0.8rem;">Memiliki pengalaman mengajar di beberapa lembaga pendidikan
+                            dan keagamaan, antara lain:</p>
+                        <ul style="text-align: left; padding-left: 1.5rem; margin-bottom: 0;">
+                            <li>SD dan SMP Unggulan Hamzanwadi</li>
+                            <li>Yayasan Tahfiz Darusshomad</li>
+                            <li>TPQ Al Ikhlas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; text-align: center;">
+                <button id="toggleCertBtn" class="btn btn-outline" onclick="toggleCertificates()">
+                    Lihat Prestasi Pendukung <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div id="certContainer" style="display: none; margin-top: 3rem; animation: fadeIn 0.5s;">
+                    <h3 class="section-title" style="font-size: 1.8rem;">Prestasi Pendukung</h3>
+                    <div class="certificates-grid">
+                        <div class="cert-item">
+                            <img src="cert_hifdzil.jpg" alt="Sertifikat Musabaqah Hifdzil Qur'an" class="cert-img">
+                            <p class="cert-caption">Peserta Musabaqah Hifdzil Qur'an<br>FERSERI V Tingkat Nasional 2025
+                            </p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="cert_tahfidz.jpg" alt="Sertifikat Lomba Tahfidz" class="cert-img">
+                            <p class="cert-caption">Peserta Lomba Tahfidz<br>STERIOD 2025</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="transkrip_tahfidz.jpg" alt="Transkrip Nilai Tahfizh" class="cert-img">
+                            <p class="cert-caption">Transkrip Nilai Tahfizh (15 Juz)<br>Lembaga Tahfizh Darusshomad</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="sertifikat_mtqm.jpg" alt="Sertifikat MTQM" class="cert-img">
+                            <p class="cert-caption">Peserta MTQM Ke-VI<br>UKKI Tasammuh Tahun 2025</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="sertifikat_tahfidz_darusshomad.jpg" alt="Ijazah Tahfizh Darusshomad"
+                                class="cert-img">
+                            <p class="cert-caption">Ijazah Tahfizh Al Qur'an (10 Juz)<br>Yayasan Tahfizh Darusshomad</p>
+                        </div>
+                        <div class="cert-item">
+                            <img src="sertifikat_mtqm_uin_2025.jpg" alt="Sertifikat MTQM UIN" class="cert-img">
+                            <p class="cert-caption">Peserta Tahfidz 5 Juz<br>MTQM Se-Pulau Lombok UKM PUSPA UIN Mataram
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Layanan Ngaji Privat</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Tahap 1</h3>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Pengenalan & Dasar Membaca Al-Qur’an</h4>
+                    <p>Belajar huruf hijaiyah, harakat, dan cara membaca dengan benar secara bertahap sesuai kemampuan
+                        anak.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tahap 2</h3>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Kelancaran Bacaan & Tajwid Dasar</h4>
+                    <p>Membiasakan membaca Al-Qur’an dengan lancar serta memahami hukum tajwid dasar dalam praktik.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tahap 3</h3>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Perbaikan Bacaan & Pembiasaan Ngaji</h4>
+                    <p>Fokus pada pembenahan makhraj huruf, panjang pendek bacaan, dan membangun kebiasaan ngaji rutin.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="documentation" class="section bg-light">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Dokumentasi Mengajar</h2>
+
+            <button id="toggleDocBtn" class="btn btn-primary" onclick="toggleDocumentation()">
+                Lihat Dokumentasi Kelas <i class="fas fa-camera"></i>
+            </button>
+
+            <div id="docContainer" style="display: none; margin-top: 3rem; animation: fadeIn 0.5s;">
+                <p style="margin-bottom: 2rem; color: var(--light-text);">Momen keseruan dan semangat belajar anak-anak
+                    dalam mengaji.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="doc_1.jpg" alt="Dokumentasi Ngaji 1" class="gallery-img"></div>
+                    <div class="gallery-item"><img src="doc_2.jpg" alt="Dokumentasi Ngaji 2" class="gallery-img"></div>
+                    <div class="gallery-item"><img src="doc_3.jpg" alt="Dokumentasi Ngaji 3" class="gallery-img"></div>
+                    <div class="gallery-item"><img src="doc_4.jpg" alt="Dokumentasi Ngaji 4" class="gallery-img"></div>
+                    <div class="gallery-item"><img src="doc_5.jpg" alt="Dokumentasi Ngaji 5" class="gallery-img"></div>
+                    <div class="gallery-item"><img src="doc_6.jpg" alt="Dokumentasi Ngaji 6" class="gallery-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Ulasan Wali Santri</h2>
+
+            <button id="toggleReviewBtn" class="btn btn-outline" onclick="toggleReviews()">
+                Lihat Apa Kata Mereka <i class="fas fa-star"></i>
+            </button>
+
+            <div id="reviewContainer" style="display: none; margin-top: 3rem; animation: fadeIn 0.5s;">
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Bunda Rina</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="review-text">"Alhamdulillah, sejak belajar sama Kak Amira, anak saya jadi lebih
+                            semangat ngajinya. Pendekatannya sabar banget."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Ibu Sarah</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="review-text">"Metode belajarnya mudah dipahami anak. Jadwal juga fleksibel, sangat
+                            membantu kami yang sibuk."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Pak Heru</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="review-text">"Recommended banget buat yang cari guru privat ngaji. Orangnya telaten
+                            dan materi tajwidnya jelas."</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/6287761571803?text=Halo%20Kak%20Amira,%20saya%20ingin%20memberikan%20ulasan%20untuk%20pembelajaran..."
+                    target="_blank" class="btn-whatsapp-review">
+                    <i class="fab fa-whatsapp"></i> Beri Ulasan di WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container contact-container">
+            <div class="contact-text">
+                <h2>Siap Belajar Bersama?</h2>
+                <p>Silakan hubungi saya untuk konsultasi jadwal dan materi. Saya siap membantu putra-putri Anda.</p>
+                <div class="contact-info">
+                    <p><i class="fab fa-whatsapp"></i> 0877-6157-1803</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Layanan ngaji privat tersedia untuk wilayah Surallaga dan
+                        area terdekat</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Orang Tua / Siswa" required>
+                <input type="tel" placeholder="Nomor WhatsApp" required>
+                <select>
+                    <option disabled selected>Tingkat Kemampuan Saat Ini</option>
+                    <option value="Belum bisa membaca">Belum bisa membaca</option>
+                    <option value="Sudah Iqra">Sudah Iqra</option>
+                    <option value="Sudah Al-Qur’an">Sudah Al-Qur’an</option>
+                </select>
+                <textarea placeholder="Pesan singkat / Kebutuhan belajar"></textarea>
+                <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Amira Najwa Fitri - Portfolio.</p>
+    </footer>
+
+    <script>
+        // Simple script for contact form (redirect to WA)
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = this.querySelector('input[type="text"]').value;
+            const level = this.querySelector('select').value;
+            const msg = this.querySelector('textarea').value;
+
+            const waMsg = `Halo Kak Amira, saya ${name}. Saya tertarik dengan program bimbel: ${level}. ${msg}`;
+            window.open(`https://wa.me/6287761571803?text=${encodeURIComponent(waMsg)}`, '_blank');
+        });
+
+        // Toggle Certificates
+        function toggleCertificates() {
+            const container = document.getElementById('certContainer');
+            const btn = document.getElementById('toggleCertBtn');
+
+            if (container.style.display === 'none') {
+                container.style.display = 'block';
+                btn.innerHTML = 'Sembunyikan Prestasi <i class="fas fa-chevron-up"></i>';
+            } else {
+                container.style.display = 'none';
+                btn.innerHTML = 'Lihat Prestasi Pendukung <i class="fas fa-chevron-down"></i>';
+            }
+        }
+
+        // Toggle Documentation
+        function toggleDocumentation() {
+            const container = document.getElementById('docContainer');
+            const btn = document.getElementById('toggleDocBtn');
+
+            if (container.style.display === 'none') {
+                container.style.display = 'block';
+                btn.innerHTML = 'Sembunyikan Dokumentasi <i class="fas fa-times"></i>';
+                // Change button style to outline when open
+                btn.classList.remove('btn-primary');
+                btn.classList.add('btn-outline');
+            } else {
+                container.style.display = 'none';
+                btn.innerHTML = 'Lihat Dokumentasi Kelas <i class="fas fa-camera"></i>';
+                // Revert button style
+                btn.classList.add('btn-primary');
+                btn.classList.remove('btn-outline');
+            }
+        }
+
+        // Toggle Reviews
+        function toggleReviews() {
+            const container = document.getElementById('reviewContainer');
+            const btn = document.getElementById('toggleReviewBtn');
+
+            if (container.style.display === 'none') {
+                container.style.display = 'block';
+                btn.innerHTML = 'Sembunyikan Ulasan <i class="fas fa-chevron-up"></i>';
+            } else {
+                container.style.display = 'none';
+                btn.innerHTML = 'Lihat Apa Kata Mereka <i class="fas fa-star"></i>';
+            }
+        }
+    </script>
+</body>
+
+</html>
